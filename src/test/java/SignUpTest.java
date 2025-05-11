@@ -18,8 +18,8 @@ public class SignUpTest {
         driver.findElement(By.cssSelector("[value=Continue]")).click();
         boolean isDisplayed = driver.findElement(By.cssSelector("[value=Register]")).isDisplayed();
         Assert.assertTrue(isDisplayed);
-        driver.findElement(By.name("first_name")).sendKeys("Maksim");
-        driver.findElement(By.name("last_name")).sendKeys("Petrov");
+        driver.findElement(By.name("first_name")).sendKeys("Ivan");
+        driver.findElement(By.name("last_name")).sendKeys("Karsakov");
         driver.findElement(By.name("email")).sendKeys("test@mail.ru");
         driver.findElement(By.name("password1")).sendKeys("123qwe");
         driver.findElement(By.name("password2")).sendKeys("123qwe");
